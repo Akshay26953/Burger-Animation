@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Ubuntu:wght@400;500&display=swap');
+
+body {
+    background: #ffb33f;
+}
+h1 {
+    color: white;
+    position: absolute;
+    font-size: 90px;
+    font-family: 'Croissant One', cursive;
+    top: 15%;
+    left: 9.5%;
+    transform: translateY(-40%);
+    text-shadow: 10px 10px 20px black;
+}
+h2 {
+    color: #382407;
+    position: absolute;
+    font-size: 35px;
+    font-family: 'Croissant One', cursive;
+    top: 35%;
+    left: 10%;
+}
+p{
+    width: 50%;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    top: 45%;
+    left: 10%;
+    line-height: 30px;
+}
+p strong {
+    font-size: 23px;
+}
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgb(199, 20, 20);
+    color: white;
+    border: none;
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    top: 72%;
+    left: 10%;
+    cursor: pointer;
+    transition: background 0.25s ;
+}
+.btn:hover {
+    background: rgb(167, 9, 9);
+}
+img {
+    width: 350px;
+    position: absolute;
+    right: 10%;
+    /* transform: translate(-50%); */
+}
+.burger_top {
+    top: 28%;
+}
+.tommato {
+    top: 42%;
+    transform: rotate(5deg);
+}
+.lattice {
+    width: 375px;
+    top: 43%;
+}
+.cheeze {
+    top: 55%;
+}
+.nonveg {
+    top: 55%;
+    transform: rotate(5deg);
+}
+.burger_base {
+    top: 60%;
+    filter: drop-shadow(16px 15px 22px black);
+    /* box-shadow: 0 0 10px black; */
+}

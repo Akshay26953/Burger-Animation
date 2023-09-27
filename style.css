@@ -1,81 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Ubuntu:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Ubuntu:wght@400;500&display=swap");
 
-body {
-    background: #ffb33f;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --red: rgb(199, 20, 20);
+  --yellow: #ffb33f;
+  --dark: #382407;
+}
+#section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: var(--yellow);
+  overflow: hidden;
 }
 h1 {
-    color: white;
-    position: absolute;
-    font-size: 90px;
-    font-family: 'Croissant One', cursive;
-    top: 15%;
-    left: 9.5%;
-    transform: translateY(-40%);
-    text-shadow: 10px 10px 20px black;
+  color: white;
+  position: absolute;
+  font-size: 90px;
+  font-family: "Croissant One", cursive;
+  top: 30%;
+  left: -40%;
+  transform: translateY(-40%);
+  text-shadow: 10px 10px 20px black;
+  -webkit-transition: left 1s ease-out;
+  transition: left 1s ease-out;
 }
 h2 {
-    color: #382407;
-    position: absolute;
-    font-size: 35px;
-    font-family: 'Croissant One', cursive;
-    top: 35%;
-    left: 10%;
+  color: var(--dark);
+  position: absolute;
+  font-size: 35px;
+  font-family: "Croissant One", cursive;
+  top: 42%;
+  left: -40%;
+  -webkit-transition: left 2s ease-out;
+  transition: left 2s ease-out;
 }
-p{
-    width: 50%;
-    position: absolute;
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
-    top: 45%;
-    left: 10%;
-    line-height: 30px;
+p {
+  width: 50%;
+  position: absolute;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  top: 50%;
+  left: -50%;
+  line-height: 30px;
+  -webkit-transition: left 3s ease-out;
+  transition: left 3s ease-out;
 }
 p strong {
-    font-size: 23px;
+  font-size: 23px;
 }
 .btn {
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: rgb(199, 20, 20);
-    color: white;
-    border: none;
-    position: absolute;
-    font-size: 18px;
-    font-family: 'Ubuntu', sans-serif;
-    top: 72%;
-    left: 10%;
-    cursor: pointer;
-    transition: background 0.25s ;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: var(--red);
+  color: white;
+  border: none;
+  position: absolute;
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+  top: 75%;
+  left: 10%;
+  cursor: pointer;
+  transform: scale(0.01);
+  transition: background 0.25s, transform 1s 2s ease;
 }
 .btn:hover {
-    background: rgb(167, 9, 9);
+  background: rgb(167, 9, 9);
+}
+.redBg {
+  position: absolute;
+  width: 250vw;
+  height: 250vh;
+  background: var(--red);
+  transform: rotate(77deg);
+  /* transform-origin: bottom right; */
+  transition: transform 2s ease-out;
 }
 img {
-    width: 350px;
-    position: absolute;
-    right: 10%;
-    /* transform: translate(-50%); */
+  width: 350px;
+  position: absolute;
+  right: -30%;
+  z-index: 10;
+  -webkit-transition: right 2s ease-out;
+  transition: right 2s ease-out;
 }
 .burger_top {
-    top: 28%;
+  top: 28%;
+  /* transition: top 1s ease-out; */
 }
 .tommato {
-    top: 42%;
-    transform: rotate(5deg);
+  top: 42%;
+  transform: rotate(5deg);
 }
 .lattice {
-    width: 375px;
-    top: 43%;
+  width: 375px;
+  top: 43%;
 }
 .cheeze {
-    top: 55%;
+  top: 55%;
 }
 .nonveg {
-    top: 55%;
-    transform: rotate(5deg);
+  top: 55%;
+  transform: rotate(5deg);
 }
 .burger_base {
-    top: 60%;
-    filter: drop-shadow(16px 15px 22px black);
-    /* box-shadow: 0 0 10px black; */
+  top: 60%;
+  filter: drop-shadow(16px 15px 22px black);
+}
+.btn1 {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: var(--yellow);
+  color: var(--dark);
+  border: none;
+  position: absolute;
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  /* transform: scale(0.01); */
+  z-index: 11;
+  /* transition: background 0.25s, transform 1s 2s ease; */
+}
+.btn1:hover {
+  background: #e69f35;
 }

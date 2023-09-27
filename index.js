@@ -6,6 +6,12 @@ const btn = document.querySelector(".btn");
 const btn1 = document.querySelector(".btn1");
 const redBg = document.querySelector(".redBg");
 const burger_top = document.querySelector(".burger_top");
+const tomato = document.querySelector(".tomato");
+const lattice = document.querySelector(".lattice");
+const cheeze = document.querySelector(".cheeze");
+const nonveg = document.querySelector(".nonveg");
+let status = false;
+
 function load() {
   h1.style.left = "9.5%";
   h2.style.left = "10%";
@@ -31,7 +37,11 @@ btn.addEventListener("click", () => {
 btn1.addEventListener("click", () => {
   images.forEach((img) => {
     img.style.transitionProperty = "top";
-    img.style.transitionDuration= "1s";
+    img.style.transitionDuration = "1s";
   });
-  burger_top.style.top = "20%";
+  burger_top.style.top = "5%";
+  tomato.style.top = "21%";
+  lattice.style.top = "27%";
+  cheeze.style.top = "43%";
+  nonveg.style.top = "50%";
 });
